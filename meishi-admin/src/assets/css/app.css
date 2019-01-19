@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+}
+html, body, .el-container, #app{
+  height: 100%;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+  display: block;
+  content:  '';
+  clear: both;
+}
+.mt{
+  margin-top: 10px!important;
+}
+.el-header{
+  background-color: antiquewhite;
+}
+.el-aside{
+  background-color: antiquewhite;
+}
+.el-main{
+  background-color: aliceblue;
+}
+.el-main .main-container{
+  margin-top: 20px;
+}
+.h1{
+  font-size: 20px;
+  line-height: 8px;
+}
+.h1 i{
+  font-size: 25px;
+  position: absolute;
+  top: 18px;
+  left: 21px;
+}
+.h1 span{
+  margin: 0 0 0 31px;
+}
