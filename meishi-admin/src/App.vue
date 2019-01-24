@@ -20,8 +20,12 @@
         </el-dropdown>
       </el-header>
       <el-container>
-        <el-aside>asider</el-aside>
-        <el-main>mainer</el-main>
+        <el-aside>
+          <AppAside />
+        </el-aside>
+        <el-main>
+          <router-view></router-view>
+        </el-main>
       </el-container>
     </el-container>
   </div>
@@ -29,11 +33,16 @@
 
 <script lang='ts'>
 import { Vue, Component } from "vue-property-decorator";
+import AppAside from '@/components/app-aside.vue'
 // let a:string = 's'
 // export default {
 
 // }
-@Component({})
+@Component({
+  components: {
+    AppAside
+  }
+})
 export default class App extends Vue {
   // name:string = 'sss'
   // m() {
