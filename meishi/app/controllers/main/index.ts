@@ -25,7 +25,140 @@ export class MainIndexController {
     // ctx.body = '首页'
 
     ctx.body = ctx.template.render('index.html', {
-      appName: '美食'
+      categories: [
+        {
+          name: '菜谱大全',
+          children: [
+            {
+              title: '秋葵',
+              describe: '新晋VC王'
+            },
+            {
+              title: '西红柿',
+              describe: '共3160道菜谱'
+            },
+            {
+              title: '黑木耳',
+              describe: '百搭配菜，防雾霾'
+            },
+            {
+              title: '小龙虾',
+              describe: '红到勾心，辣到流泪'
+            },
+            {
+              title: '螃蟹',
+              describe: '全民爆红'
+            },
+            {
+              title: '鸡翅',
+              describe: '共1156道菜谱'
+            },
+            {
+              title: '肉禽蛋',
+              describe: '共231种'
+            },
+          ]
+        },
+        {
+          name: '食材大全',
+          children: [
+            {
+              title: '秋葵',
+              describe: '新晋VC王'
+            },
+            {
+              title: '西红柿',
+              describe: '共3160道菜谱'
+            },
+            {
+              title: '黑木耳',
+              describe: '百搭配菜，防雾霾'
+            },
+            {
+              title: '小龙虾',
+              describe: '红到勾心，辣到流泪'
+            },
+            {
+              title: '螃蟹',
+              describe: '全民爆红'
+            },
+            {
+              title: '鸡翅',
+              describe: '共1156道菜谱'
+            },
+            {
+              title: '肉禽蛋',
+              describe: '共231种'
+            },
+          ]
+        },
+        {
+          name: '饮食健康',
+          children: [
+            {
+              title: '秋葵',
+              describe: '新晋VC王'
+            },
+            {
+              title: '西红柿',
+              describe: '共3160道菜谱'
+            },
+            {
+              title: '黑木耳',
+              describe: '百搭配菜，防雾霾'
+            },
+            {
+              title: '小龙虾',
+              describe: '红到勾心，辣到流泪'
+            },
+            {
+              title: '螃蟹',
+              describe: '全民爆红'
+            },
+            {
+              title: '鸡翅',
+              describe: '共1156道菜谱'
+            },
+            {
+              title: '肉禽蛋',
+              describe: '共231种'
+            },
+          ]
+        },
+        {
+          name: '专题专区',
+          children: [
+            {
+              title: '秋葵',
+              describe: '新晋VC王'
+            },
+            {
+              title: '西红柿',
+              describe: '共3160道菜谱'
+            },
+            {
+              title: '黑木耳',
+              describe: '百搭配菜，防雾霾'
+            },
+            {
+              title: '小龙虾',
+              describe: '红到勾心，辣到流泪'
+            },
+            {
+              title: '螃蟹',
+              describe: '全民爆红'
+            },
+            {
+              title: '鸡翅',
+              describe: '共1156道菜谱'
+            },
+            {
+              title: '肉禽蛋',
+              describe: '共231种'
+            },
+          ]
+        },
+      ]
     })
   }
   @Get('/user')
